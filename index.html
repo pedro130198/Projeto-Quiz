@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" type="text/css" href="css/estilo.css">
+
+  <!-- update the version number as needed -->
+  <script defer src="/__/firebase/5.5.0/firebase-app.js"></script>
+  <!-- include only the Firebase features as you need -->
+  <script defer src="/__/firebase/5.5.0/firebase-auth.js"></script>
+  <script defer src="/__/firebase/5.5.0/firebase-database.js"></script>
+  <script defer src="/__/firebase/5.5.0/firebase-messaging.js"></script>
+  <script defer src="/__/firebase/5.5.0/firebase-storage.js"></script>
+  <!-- initialize the SDK after all desired features are loaded -->
+  <script defer src="/__/firebase/init.js"></script>
+  <script src="script.js"></script>
+  <title>Quiz Desenvolvimento Web</title>
+</head>
+<body>
+  <ul>
+    <li><p>Quiz sobre Desenvolvimento Web</p></li>
+  </ul>
+  <form name="quiz" action="get">
+    <h4><strong>Pergunta 1: Relacione as Colunas com suas definições corretas.</strong></h4>
+    <p>A - HTML</p>
+    <p>B - Tag</p>
+    <p>C - Preâmbulo</p>
+    <p>D - Elemento Raiz</p>
+    <p>E - Atributo</p>
+
+    <p>O texto <'!doctype html'>, que precede elemento raiz: </p>
+    <select name="p1a">
+      <option value="nada">...</option>
+      <option value="errada">A</option>
+      <option value="errada">B</option>
+      <option value="certa">C</option>
+      <option value="errada">D</option>
+      <option value="errada">E</option>
+    </select>
+
+    <p>Dado associado a um elemento; tem nome e valor:</p>
+    <select name="p1b"> 
+      <option value="nada">...</option>
+      <option value="errada">A</option>
+      <option value="errada">B</option>
+      <option value="errada">C</option>
+      <option value="errada">D</option>
+      <option value="certa">E</option>
+    </select>
+
+    <p>É uma linguagem de marcação de hipertexto:</p>
+    <select name="p1c"> 
+      <option value="nada">...</option>
+      <option value="certa">A</option>
+      <option value="errada">B</option>
+      <option value="errada">C</option>
+      <option value="errada">D</option>
+      <option value="errada">E</option>
+    </select>
+
+    <p>O primeiro elemento do documento, que é <'html'>:</p>
+    <select name="p1d"> 
+      <option value="nada">...</option>
+      <option value="errada">A</option>
+      <option value="errada">B</option>
+      <option value="errada">C</option>
+      <option value="certa">D</option>
+      <option value="errada">E</option>
+    </select>
+
+    <p>Marcador que indica início ou fim de um elemento: </p>
+    <select name="p1e">
+      <option value="nada">...</option>
+      <option value="errada">A</option>
+      <option value="certa">B</option>
+      <option value="errada">C</option>
+      <option value="errada">D</option>
+      <option value="errada">E</option>
+    </select>
+    <hr>
+    <h4><strong>Pergunta 2: Assinale a sintaxe incorreta: </strong></h4>
+    <input type="radio" name="p2" value="errada"> (<'a href="google.com.br">aqui</'a>) <br>
+    <input type="radio" name="p2" value="errada">(<'img src="Imagem/algo.png">) <br>
+    <input type="radio" name="p2" value="certa"> (<'a src="google.com.br">aqui</'a>) <br>
+    <input type="radio" name="p2" value="errada"> (<'meta charset="UTF-8"''>) <br>
+    <hr>
+    <h4><strong>Pergunta 3: Assinale a alternativa que complementa as seguintes sentenças: </strong></h4>
+    <p>A - ... :é uma lista não ordenada, que classifica os itens como se fosse uma lista.</p>
+    <p>B - ... :é uma lista de definição, onde não é feita como se fosse item por item mas é feita com um termo e sua definição depois.</p>
+    <p>C - ... :é uma lista ordenada, podendo-se ordena por numeros ou letras.</p>
+
+    <input type="radio" name="p3" value="errada"> A - OL / B - DL / C - UL <br>
+    <input type="radio" name="p3" value="errada"> A - DL / B - UL / C - OL <br>
+    <input type="radio" name="p3" value="errada"> A - UL / B - OL / C - DL <br>
+    <input type="radio" name="p3" value="certa"> A - UL / B - DL / C - OL <br>
+    <hr>
+    <h4><strong>Pergunta 4: Assinale as propriedades corretas de CSS:</strong></h4>
+    <input type="checkbox" name="p4" value="certa"> background-color
+    <input type="checkbox" name="p4" value="certa"> margin-bottom
+    <input type="checkbox" name="p4" value="errada"> margin-up
+    <input type="checkbox" name="p4" value="certa"> color
+    <input type="checkbox" name="p4" value="errada"> font-width
+    <input type="checkbox" name="p4" value="errada"> color-text
+    <hr>
+    <h4><strong>Pergunta 5: Qual propriedade de CSS é utilizada para repetir uma imagem varias vezes na tela?</strong></h4>
+    R:<input type="text" name="p5">
+    <hr>
+    <h4><strong>Pergunta 6: Com base no script abaixo assinale a alternativa correta: </strong></h4>
+    <img src="imagens/script.PNG">
+    <p>Uma pessoa pesa 91Kg e mede 1,70m qual seria seu IMC?</p>
+    <input type="radio" name="p6" value="errada">A - Magro<br>
+    <input type="radio" name="p6" value="errada">B - Normal<br>
+    <input type="radio" name="p6" value="errada">C - Sobre Peso<br>
+    <input type="radio" name="p6" value="certa">D - Obesidade<br>
+    <input type="radio" name="p6" value="errada">E - Obesidade Grave<br>
+    <hr>
+    <h4><strong>Pergunta 7: Em JavaScript qual comando utilizado onde aparace uma caixa de mensagem para o usuário inserir um valor?</strong></h4>
+    R:<input type="text" name="p7">
+    <hr>
+    <h4><strong>Pergunta 8: Para ter imagens flexíveis, usa-se a restrição "width" no CSS, que estabelece que a imagem pode ter uma largura flexível dentro do elemento em que estão contidas.Essa afirmação está correta? </strong></h4>
+
+    <input type="radio" name="p8" value="errada"> Verdadeiro <br>
+    <input type="radio" name="p8" value="certa"> Falso <br>
+    <hr>
+    <h4><strong>Pergunta 9: Sobre responsividade assinale a metatag correta: </strong></h4>
+    <input type="radio" name="p9" value="certa"> (<'meta name="viewport" content="width=device-width"'>) <br>
+    <input type="radio" name="p9" value="errada"> (<'meta name="keywords" content="HTML,CSS,XML,JavaScript"'>) <br>
+    <input type="radio" name="p9" value="errada"> (<'meta name="author" content="John Doe"'>) <br>
+    <input type="radio" name="p9" value="errada"> (<'meta charset="UTF-8"'>) <br>
+    <hr>
+    <h4><strong>Pergunta 10: Quais os 3 métodos possiveis para a implementação de código CSS, como eles são implementados e qual métedo é recomendado? </strong></h4>
+    <textarea rows="3" cols="50" placeholder="Digite sua resposta aqui..."></textarea>
+    <hr>
+    <br>
+    <input type="button" value="Responder" onClick="verificar()">
+
+    <p><strong>OBS: Questão 10 sujeita a correção</strong></p>
+    <p>Nota máxima : 9</p>
+    <p>De 9 perguntas você tirou: <input type="text" name="acertos" disabled inline></p>
+  </form>
+</body>
+</html>
